@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Specificity Cheatsheat</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 class="decorate">CSS Specificity Cheatsheat</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Selector</th>
+                    <th scope="col">Declaration</th>
+                    <th scope="col">Application</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Type</td>
+                    <td>type {<br> declaration....<br>}</td>
+                    <td>Applies style to the selected type. For instance p, h1, table. Remember not to add the angle brackets to the type</td>
+                </tr>
+                <tr>
+                    <td>Class</td>
+                    <td>.class {<br> declaration....<br>}</td>
+                    <td>Applies style to the all types with a class name. For instance &lt;p class="class"&gt; This paragraph will get the styles in .class ruleset &lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <td>ID</td>
+                    <td>#Idname {<br> declaration....<br>}</td>
+                    <td>Applies style to the all types with an id name. For instance &lt;p id="Idname"&gt; This paragraph will get the styles in #id ruleset &lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <td>Attribute</td>
+                    <td>type[attribute] {<br> declaration....<br>}</td>
+                    <td>Applies to elements based on the presence or value of a given attribute. a[title] {
+                        color: purple;
+                      }, an &lt;a&gt; element with a title attribute gets the color purple</td>
+                </tr>
+                <tr >
+                    <td colspan="3" class="decorate"><strong>Things to note</strong></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <ul>
+                            <li>Order of increasing specificity goes from Type to Class and finally to ID</li>
+                            <li>Classes override type and IDs override classes!</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

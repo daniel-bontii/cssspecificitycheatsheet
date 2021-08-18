@@ -1,0 +1,18 @@
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+table {
+    border-collapse: collapse;
+    text-align: left;
+}
+body{
+    margin:0 auto;
+    width: 960px;
+    background-color: honeydew;
+    font-family: "Lucida Console", Courier, monospace;
+}
+.decorate {
+    text-align: center;
+    background-color: aqua;
+}
